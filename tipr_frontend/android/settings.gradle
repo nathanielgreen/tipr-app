@@ -1,0 +1,3 @@
+rootProject.name = 'tipr_frontend'
+
+include ':app'
