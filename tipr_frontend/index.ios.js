@@ -11,6 +11,18 @@ import React, {
   View
 } from 'react-native';
 
+// var LogoImage = React.createClass({
+//   render: function() {
+//     return(
+//       <View>
+//         <Image
+//           source={this.props.source}
+//         />
+//       </View>
+//     );
+//   }
+// });
+
 class tipr_frontend extends Component {
   render() {
     return (
@@ -18,6 +30,7 @@ class tipr_frontend extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
+        <Image source={require('./img/logo.png')} />
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
         </Text>
@@ -46,6 +59,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  logo: {
+    alignItems: 'center',
   },
 });
 
